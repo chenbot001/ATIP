@@ -1,0 +1,790 @@
+CSV FILES SAMPLE ANALYSIS
+==================================================
+
+1. FILE: acl_dblp_paper_mapping.csv
+   Size: 4.27 MB
+   Total Rows: 34,024
+   Columns (5):
+      1. acl_paper_id
+      2. dblp_key
+      3. title
+      4. year
+      5. venue
+
+   Sample Data (first 5 rows):
+     Row 1:
+       acl_paper_id: P98-2240
+       dblp_key: conf/acl/Belz98
+       title: Discovering Phonotactic Finite-State Automata by Generic Search.
+       year: 1998
+       venue: COLING-ACL
+
+     Row 2:
+       acl_paper_id: 2020.acl-main.42
+       dblp_key: conf/acl/ZhengMZLH20
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       year: 2020
+       venue: ACL
+
+     Row 3:
+       acl_paper_id: P10-1077
+       dblp_key: conf/acl/WuMS10
+       title: Fine-Grained Genre Classification Using Structural Learning Algorithms.
+       year: 2010
+       venue: ACL
+
+     Row 4:
+       acl_paper_id: P06-3005
+       dblp_key: conf/acl/Park06
+       title: Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.
+       year: 2006
+       venue: ACL
+
+     Row 5:
+       acl_paper_id: 2020.acl-main.251
+       dblp_key: conf/acl/TuPWG20
+       title: ENGINE: Energy-Based Inference Networks for Non-Autoregressive Machine Translation.
+       year: 2020
+       venue: ACL
+
+   Unique Values Sample:
+     acl_paper_id: ['P98-2240', '2020.acl-main.42', 'P10-1077', 'P06-3005', '2020.acl-main.251']
+     dblp_key: ['conf/acl/Belz98', 'conf/acl/ZhengMZLH20', 'conf/acl/WuMS10', 'conf/acl/Park06', 'conf/acl/TuPWG20']
+     title: ['Discovering Phonotactic Finite-State Automata by Generic Search.', 'Opportunistic Decoding with Timely Correction for Simultaneous Translation.', 'Fine-Grained Genre Classification Using Structural Learning Algorithms.', 'Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.', 'ENGINE: Energy-Based Inference Networks for Non-Autoregressive Machine Translation.']
+     venue: ['COLING-ACL', 'ACL']
+
+--------------------------------------------------
+
+2. FILE: acl_papers_master.csv
+   Size: 99.53 MB
+   Total Rows: 38,805
+   Columns (38):
+      1. paper_id
+      2. tuple_id
+      3. doi
+      4. parent
+      5. bibkey
+      6. title
+      7. attachments
+      8. authors
+      9. author_ids
+     10. author_affils
+     11. author_variants
+     12. awards
+     13. editors
+     14. errata
+     15. revisions
+     16. videos
+     17. abstract
+     18. deletion
+     19. ingest_date
+     20. issue
+     21. journal
+     22. language
+     23. note
+     24. pages
+     25. paperswithcode
+     26. pdf
+     27. venue
+     28. url
+     29. year
+     30. address
+     31. bibtype
+     32. citeproc_dict
+     33. csltype
+     34. is_deleted
+     35. is_frontmatter
+     36. language_name
+     37. month
+     38. publisher
+
+   Sample Data (first 5 rows):
+     Row 1:
+       paper_id: 2020.acl-main.0
+       tuple_id: ('2020.acl', 'main', '0')
+       doi: nan
+       parent: Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual ...
+       bibkey: acl-2020-association
+       title: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics
+       attachments: []
+       authors: []
+       author_ids: []
+       author_affils: []
+       author_variants: []
+       awards: []
+       editors: []
+       errata: []
+       revisions: []
+       videos: []
+       abstract: nan
+       deletion: nan
+       ingest_date: nan
+       issue: nan
+       journal: nan
+       language: nan
+       note: nan
+       pages: nan
+       paperswithcode: nan
+       pdf: PDFReference(name='2020.acl-main.0', checksum='5ccfe647')
+       venue: ACL
+       url: https://aclanthology.org/2020.acl-main.0/
+       year: 2020
+       address: Online
+       bibtype: proceedings
+       citeproc_dict: {'id': 'acl-2020-association', 'title': 'Proceedings of the 58th Annual Meeting of the Association f...
+       csltype: book
+       is_deleted: False
+       is_frontmatter: True
+       language_name: nan
+       month: July
+       publisher: Association for Computational Linguistics
+
+     Row 2:
+       paper_id: 2020.acl-main.1
+       tuple_id: ('2020.acl', 'main', '1')
+       doi: 10.18653/v1/2020.acl-main.1
+       parent: Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual ...
+       bibkey: gelderloos-etal-2020-learning
+       title: Learning to Understand Child-directed and Adult-directed Speech
+       attachments: [('Software', AttachmentReference(name='2020.acl-main.1.Software.zip', checksum='10e7cdce'))]
+       authors: ['Lieke Gelderloos', 'Grzegorz Chrupała', 'Afra Alishahi']
+       author_ids: [None, None, None]
+       author_affils: [None, None, None]
+       author_variants: [[], [], []]
+       awards: []
+       editors: []
+       errata: []
+       revisions: []
+       videos: [VideoReference(name='http://slideslive.com/38929437', checksum=None, permission=True)]
+       abstract: Speech directed to children differs from adult-directed speech in linguistic aspects such as repetit...
+       deletion: nan
+       ingest_date: nan
+       issue: nan
+       journal: nan
+       language: nan
+       note: nan
+       pages: 1–6
+       paperswithcode: nan
+       pdf: PDFReference(name='2020.acl-main.1', checksum='ff986e52')
+       venue: ACL
+       url: https://aclanthology.org/2020.acl-main.1/
+       year: 2020
+       address: Online
+       bibtype: inproceedings
+       citeproc_dict: {'id': 'gelderloos-etal-2020-learning', 'title': 'Learning to Understand Child-directed and Adult-di...
+       csltype: paper-conference
+       is_deleted: False
+       is_frontmatter: False
+       language_name: nan
+       month: July
+       publisher: Association for Computational Linguistics
+
+     Row 3:
+       paper_id: 2020.acl-main.2
+       tuple_id: ('2020.acl', 'main', '2')
+       doi: 10.18653/v1/2020.acl-main.2
+       parent: Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual ...
+       bibkey: rinaldi-etal-2020-predicting
+       title: Predicting Depression in Screening Interviews from Latent Categorization of Interview Prompts
+       attachments: []
+       authors: ['Alex Rinaldi', 'Jean Fox Tree', 'Snigdha Chaturvedi']
+       author_ids: [None, None, None]
+       author_affils: [None, None, None]
+       author_variants: [[], [], []]
+       awards: []
+       editors: []
+       errata: []
+       revisions: []
+       videos: [VideoReference(name='http://slideslive.com/38928967', checksum=None, permission=True)]
+       abstract: Accurately diagnosing depression is difficult– requiring time-intensive interviews, assessments, and...
+       deletion: nan
+       ingest_date: nan
+       issue: nan
+       journal: nan
+       language: nan
+       note: nan
+       pages: 7–18
+       paperswithcode: nan
+       pdf: PDFReference(name='2020.acl-main.2', checksum='95447b66')
+       venue: ACL
+       url: https://aclanthology.org/2020.acl-main.2/
+       year: 2020
+       address: Online
+       bibtype: inproceedings
+       citeproc_dict: {'id': 'rinaldi-etal-2020-predicting', 'title': 'Predicting Depression in Screening Interviews from ...
+       csltype: paper-conference
+       is_deleted: False
+       is_frontmatter: False
+       language_name: nan
+       month: July
+       publisher: Association for Computational Linguistics
+
+     Row 4:
+       paper_id: 2020.acl-main.3
+       tuple_id: ('2020.acl', 'main', '3')
+       doi: 10.18653/v1/2020.acl-main.3
+       parent: Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual ...
+       bibkey: liu-etal-2020-coach
+       title: Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling
+       attachments: []
+       authors: ['Zihan Liu', 'Genta Indra Winata', 'Peng Xu', 'Pascale Fung']
+       author_ids: [None, None, None, None]
+       author_affils: [None, None, None, None]
+       author_variants: [[], [], [], []]
+       awards: []
+       editors: []
+       errata: []
+       revisions: []
+       videos: [VideoReference(name='http://slideslive.com/38928771', checksum=None, permission=True)]
+       abstract: As an essential task in task-oriented dialog systems, slot filling requires extensive training data ...
+       deletion: nan
+       ingest_date: nan
+       issue: nan
+       journal: nan
+       language: nan
+       note: nan
+       pages: 19–25
+       paperswithcode: nan
+       pdf: PDFReference(name='2020.acl-main.3', checksum='73fadd04')
+       venue: ACL
+       url: https://aclanthology.org/2020.acl-main.3/
+       year: 2020
+       address: Online
+       bibtype: inproceedings
+       citeproc_dict: {'id': 'liu-etal-2020-coach', 'title': 'Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filli...
+       csltype: paper-conference
+       is_deleted: False
+       is_frontmatter: False
+       language_name: nan
+       month: July
+       publisher: Association for Computational Linguistics
+
+     Row 5:
+       paper_id: 2020.acl-main.4
+       tuple_id: ('2020.acl', 'main', '4')
+       doi: 10.18653/v1/2020.acl-main.4
+       parent: Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual ...
+       bibkey: zhao-etal-2020-designing
+       title: Designing Precise and Robust Dialogue Response Evaluators
+       attachments: []
+       authors: ['Tianyu Zhao', 'Divesh Lala', 'Tatsuya Kawahara']
+       author_ids: [None, None, None]
+       author_affils: [None, None, None]
+       author_variants: [[], [], []]
+       awards: []
+       editors: []
+       errata: []
+       revisions: []
+       videos: [VideoReference(name='http://slideslive.com/38928816', checksum=None, permission=True)]
+       abstract: Automatic dialogue response evaluator has been proposed as an alternative to automated metrics and h...
+       deletion: nan
+       ingest_date: nan
+       issue: nan
+       journal: nan
+       language: nan
+       note: nan
+       pages: 26–33
+       paperswithcode: nan
+       pdf: PDFReference(name='2020.acl-main.4', checksum='472ba159')
+       venue: ACL
+       url: https://aclanthology.org/2020.acl-main.4/
+       year: 2020
+       address: Online
+       bibtype: inproceedings
+       citeproc_dict: {'id': 'zhao-etal-2020-designing', 'title': 'Designing Precise and Robust Dialogue Response Evaluato...
+       csltype: paper-conference
+       is_deleted: False
+       is_frontmatter: False
+       language_name: nan
+       month: July
+       publisher: Association for Computational Linguistics
+
+   Unique Values Sample:
+     paper_id: ['2020.acl-main.0', '2020.acl-main.1', '2020.acl-main.2', '2020.acl-main.3', '2020.acl-main.4']
+     tuple_id: ["('2020.acl', 'main', '0')", "('2020.acl', 'main', '1')", "('2020.acl', 'main', '2')", "('2020.acl', 'main', '3')", "('2020.acl', 'main', '4')"]
+     doi: ['10.18653/v1/2020.acl-main.1', '10.18653/v1/2020.acl-main.2', '10.18653/v1/2020.acl-main.3', '10.18653/v1/2020.acl-main.4']
+     parent: ["Volume(data=<dict of 779 Paper items>, id='main', title=<MarkupText 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'>, year='2020', editors=[NameSpecification(name=Name(first='Dan', last='Jurafsky'), id=None, affiliation=None, variants=[]), NameSpecification(name=Name(first='Joyce', last='Chai'), id=None, affiliation=None, variants=[]), NameSpecification(name=Name(first='Natalie', last='Schluter'), id=None, affiliation=None, variants=[]), NameSpecification(name=Name(first='Joel', last='Tetreault'), id=None, affiliation=None, variants=[])], venue_ids=['acl'])"]
+     bibkey: ['acl-2020-association', 'gelderloos-etal-2020-learning', 'rinaldi-etal-2020-predicting', 'liu-etal-2020-coach', 'zhao-etal-2020-designing']
+     title: ['Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics', 'Learning to Understand Child-directed and Adult-directed Speech', 'Predicting Depression in Screening Interviews from Latent Categorization of Interview Prompts', 'Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling', 'Designing Precise and Robust Dialogue Response Evaluators']
+     attachments: ['[]', "[('Software', AttachmentReference(name='2020.acl-main.1.Software.zip', checksum='10e7cdce'))]"]
+     authors: ['[]', "['Lieke Gelderloos', 'Grzegorz Chrupała', 'Afra Alishahi']", "['Alex Rinaldi', 'Jean Fox Tree', 'Snigdha Chaturvedi']", "['Zihan Liu', 'Genta Indra Winata', 'Peng Xu', 'Pascale Fung']", "['Tianyu Zhao', 'Divesh Lala', 'Tatsuya Kawahara']"]
+     author_ids: ['[]', '[None, None, None]', '[None, None, None, None]']
+     author_affils: ['[]', '[None, None, None]', '[None, None, None, None]']
+     author_variants: ['[]', '[[], [], []]', '[[], [], [], []]']
+     awards: ['[]']
+     editors: ['[]']
+     errata: ['[]']
+     revisions: ['[]']
+     videos: ['[]', "[VideoReference(name='http://slideslive.com/38929437', checksum=None, permission=True)]", "[VideoReference(name='http://slideslive.com/38928967', checksum=None, permission=True)]", "[VideoReference(name='http://slideslive.com/38928771', checksum=None, permission=True)]", "[VideoReference(name='http://slideslive.com/38928816', checksum=None, permission=True)]"]
+     abstract: ['Speech directed to children differs from adult-directed speech in linguistic aspects such as repetition, word choice, and sentence length, as well as in aspects of the speech signal itself, such as prosodic and phonemic variation. Human language acquisition research indicates that child-directed speech helps language learners. This study explores the effect of child-directed speech when learning to extract semantic information from speech directly. We compare the task performance of models trained on adult-directed speech (ADS) and child-directed speech (CDS). We find indications that CDS helps in the initial stages of learning, but eventually, models trained on ADS reach comparable task performance, and generalize better. The results suggest that this is at least partially due to linguistic rather than acoustic properties of the two registers, as we see the same pattern when looking at models trained on acoustically comparable synthetic speech.', 'Accurately diagnosing depression is difficult– requiring time-intensive interviews, assessments, and analysis. Hence, automated methods that can assess linguistic patterns in these interviews could help psychiatric professionals make faster, more informed decisions about diagnosis. We propose JLPC, a model that analyzes interview transcripts to identify depression while jointly categorizing interview prompts into latent categories. This latent categorization allows the model to define high-level conversational contexts that influence patterns of language in depressed individuals. We show that the proposed model not only outperforms competitive baselines, but that its latent prompt categories provide psycholinguistic insights about depression.', 'As an essential task in task-oriented dialog systems, slot filling requires extensive training data in a certain domain. However, such data are not always available. Hence, cross-domain slot filling has naturally arisen to cope with this data scarcity problem. In this paper, we propose a Coarse-to-fine approach (Coach) for cross-domain slot filling. Our model first learns the general pattern of slot entities by detecting whether the tokens are slot entities or not. It then predicts the specific types for the slot entities. In addition, we propose a template regularization approach to improve the adaptation robustness by regularizing the representation of utterances based on utterance templates. Experimental results show that our model significantly outperforms state-of-the-art approaches in slot filling. Furthermore, our model can also be applied to the cross-domain named entity recognition task, and it achieves better adaptation performance than other existing baselines. The code is available at https://github.com/zliucr/coach.', 'Automatic dialogue response evaluator has been proposed as an alternative to automated metrics and human evaluation. However, existing automatic evaluators achieve only moderate correlation with human judgement and they are not robust. In this work, we propose to build a reference-free evaluator and exploit the power of semi-supervised training and pretrained (masked) language models. Experimental results demonstrate that the proposed evaluator achieves a strong correlation (> 0.6) with human judgement and generalizes robustly to diverse responses and corpora. We open-source the code and data in https://github.com/ZHAOTING/dialog-processing.']
+     pages: ['1–6', '7–18', '19–25', '26–33']
+     pdf: ["PDFReference(name='2020.acl-main.0', checksum='5ccfe647')", "PDFReference(name='2020.acl-main.1', checksum='ff986e52')", "PDFReference(name='2020.acl-main.2', checksum='95447b66')", "PDFReference(name='2020.acl-main.3', checksum='73fadd04')", "PDFReference(name='2020.acl-main.4', checksum='472ba159')"]
+     venue: ['ACL']
+     url: ['https://aclanthology.org/2020.acl-main.0/', 'https://aclanthology.org/2020.acl-main.1/', 'https://aclanthology.org/2020.acl-main.2/', 'https://aclanthology.org/2020.acl-main.3/', 'https://aclanthology.org/2020.acl-main.4/']
+     address: ['Online']
+     bibtype: ['proceedings', 'inproceedings']
+     citeproc_dict: ["{'id': 'acl-2020-association', 'title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics', 'type': 'book', 'author': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'editor': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'publisher': 'Association for Computational Linguistics', 'publisher-place': 'Online', 'issued': {'date-parts': [['2020']]}, 'URL': 'https://aclanthology.org/2020.acl-main.0/', 'container-title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'}", "{'id': 'gelderloos-etal-2020-learning', 'title': 'Learning to Understand Child-directed and Adult-directed Speech', 'type': 'paper-conference', 'author': [{'family': 'Gelderloos', 'given': 'Lieke'}, {'family': 'Chrupała', 'given': 'Grzegorz'}, {'family': 'Alishahi', 'given': 'Afra'}], 'editor': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'publisher': 'Association for Computational Linguistics', 'publisher-place': 'Online', 'issued': {'date-parts': [['2020']]}, 'URL': 'https://aclanthology.org/2020.acl-main.1/', 'DOI': '10.18653/v1/2020.acl-main.1', 'page': '1–6', 'container-title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'}", "{'id': 'rinaldi-etal-2020-predicting', 'title': 'Predicting Depression in Screening Interviews from Latent Categorization of Interview Prompts', 'type': 'paper-conference', 'author': [{'family': 'Rinaldi', 'given': 'Alex'}, {'family': 'Fox Tree', 'given': 'Jean'}, {'family': 'Chaturvedi', 'given': 'Snigdha'}], 'editor': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'publisher': 'Association for Computational Linguistics', 'publisher-place': 'Online', 'issued': {'date-parts': [['2020']]}, 'URL': 'https://aclanthology.org/2020.acl-main.2/', 'DOI': '10.18653/v1/2020.acl-main.2', 'page': '7–18', 'container-title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'}", "{'id': 'liu-etal-2020-coach', 'title': 'Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling', 'type': 'paper-conference', 'author': [{'family': 'Liu', 'given': 'Zihan'}, {'family': 'Winata', 'given': 'Genta Indra'}, {'family': 'Xu', 'given': 'Peng'}, {'family': 'Fung', 'given': 'Pascale'}], 'editor': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'publisher': 'Association for Computational Linguistics', 'publisher-place': 'Online', 'issued': {'date-parts': [['2020']]}, 'URL': 'https://aclanthology.org/2020.acl-main.3/', 'DOI': '10.18653/v1/2020.acl-main.3', 'page': '19–25', 'container-title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'}", "{'id': 'zhao-etal-2020-designing', 'title': 'Designing Precise and Robust Dialogue Response Evaluators', 'type': 'paper-conference', 'author': [{'family': 'Zhao', 'given': 'Tianyu'}, {'family': 'Lala', 'given': 'Divesh'}, {'family': 'Kawahara', 'given': 'Tatsuya'}], 'editor': [{'family': 'Jurafsky', 'given': 'Dan'}, {'family': 'Chai', 'given': 'Joyce'}, {'family': 'Schluter', 'given': 'Natalie'}, {'family': 'Tetreault', 'given': 'Joel'}], 'publisher': 'Association for Computational Linguistics', 'publisher-place': 'Online', 'issued': {'date-parts': [['2020']]}, 'URL': 'https://aclanthology.org/2020.acl-main.4/', 'DOI': '10.18653/v1/2020.acl-main.4', 'page': '26–33', 'container-title': 'Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics'}"]
+     csltype: ['book', 'paper-conference']
+     month: ['July']
+     publisher: ['Association for Computational Linguistics']
+
+--------------------------------------------------
+
+3. FILE: authorships.csv
+   Size: 25.0 MB
+   Total Rows: 161,180
+   Columns (7):
+      1. s2_id
+      2. title
+      3. dblp_name
+      4. s2_name
+      5. s2_author_id
+      6. authorship_order
+      7. match_confidence
+
+   Sample Data (first 5 rows):
+     Row 1:
+       s2_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       title: Discovering Phonotactic Finite-State Automata by Generic Search.
+       dblp_name: Anja Belz
+       s2_name: A. Belz
+       s2_author_id: 1792458
+       authorship_order: 1
+       match_confidence: matched
+
+     Row 2:
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       dblp_name: Baigong Zheng
+       s2_name: Baigong Zheng
+       s2_author_id: 20712300
+       authorship_order: 1
+       match_confidence: high
+
+     Row 3:
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       dblp_name: Mingbo Ma
+       s2_name: Mingbo Ma
+       s2_author_id: 1847848
+       authorship_order: 2
+       match_confidence: high
+
+     Row 4:
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       dblp_name: Kaibo Liu
+       s2_name: Kaibo Liu
+       s2_author_id: 66057453
+       authorship_order: 3
+       match_confidence: high
+
+     Row 5:
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       dblp_name: Renjie Zheng
+       s2_name: Renjie Zheng
+       s2_author_id: 40223399
+       authorship_order: 4
+       match_confidence: high
+
+   Unique Values Sample:
+     s2_id: ['c71d51183cad2a9c488760df1252079ebfcbed91', '931514d517731f9d925511e60f0594e5b61cd47b']
+     title: ['Discovering Phonotactic Finite-State Automata by Generic Search.', 'Opportunistic Decoding with Timely Correction for Simultaneous Translation.']
+     dblp_name: ['Anja Belz', 'Baigong Zheng', 'Mingbo Ma', 'Kaibo Liu', 'Renjie Zheng']
+     s2_name: ['A. Belz', 'Baigong Zheng', 'Mingbo Ma', 'Kaibo Liu', 'Renjie Zheng']
+     match_confidence: ['matched', 'high']
+
+--------------------------------------------------
+
+4. FILE: author_profiles.csv
+   Size: 2.58 MB
+   Total Rows: 48,567
+   Columns (10):
+      1. dblp_name
+      2. s2_author_id
+      3. s2_author_name
+      4. paper_count
+      5. first_author_count
+      6. last_author_count
+      7. affiliation
+      8. career_length
+      9. h_index
+     10. citations
+
+   Sample Data (first 5 rows):
+     Row 1:
+       dblp_name: A
+       s2_author_id: 2021565
+       s2_author_name: Aïda Khemakhem
+       paper_count: 3
+       first_author_count: 2
+       last_author_count: 1
+       affiliation: nan
+       career_length: nan
+       h_index: 3.0
+       citations: 40.0
+
+     Row 2:
+       dblp_name: A-Long Jin
+       s2_author_id: 15796861
+       s2_author_name: Alex Jin
+       paper_count: 3
+       first_author_count: 0
+       last_author_count: 0
+       affiliation: nan
+       career_length: nan
+       h_index: 3.0
+       citations: 249.0
+
+     Row 3:
+       dblp_name: A. C
+       s2_author_id: 1753580
+       s2_author_name: A. C. Tantug
+       paper_count: 1
+       first_author_count: 1
+       last_author_count: 0
+       affiliation: nan
+       career_length: nan
+       h_index: 10.0
+       citations: 267.0
+
+     Row 4:
+       dblp_name: A. Krishnamurthy
+       s2_author_id: 2064206699
+       s2_author_name: A. Krishnamurthy
+       paper_count: 1
+       first_author_count: 0
+       last_author_count: 0
+       affiliation: nan
+       career_length: nan
+       h_index: 0.0
+       citations: 0.0
+
+     Row 5:
+       dblp_name: A. Kumaran 0001
+       s2_author_id: 145376279
+       s2_author_name: A. Kumaran
+       paper_count: 2
+       first_author_count: 1
+       last_author_count: 0
+       affiliation: nan
+       career_length: nan
+       h_index: 16.0
+       citations: 805.0
+
+   Unique Values Sample:
+     dblp_name: ['A', 'A-Long Jin', 'A. C', 'A. Krishnamurthy', 'A. Kumaran 0001']
+     s2_author_name: ['Aïda Khemakhem', 'Alex Jin', 'A. C. Tantug', 'A. Krishnamurthy', 'A. Kumaran']
+
+--------------------------------------------------
+
+5. FILE: citation_details.csv
+   Size: 188.4 MB
+   Total Rows: 2,062,979
+   Columns (4):
+      1. cited_paper_id
+      2. citing_paper_id
+      3. year_cited
+      4. in_dataset
+
+   Sample Data (first 5 rows):
+     Row 1:
+       cited_paper_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       citing_paper_id: 64e6d97bb6ea8d92a38eff985c7298c5b720759f
+       year_cited: 2009.0
+       in_dataset: False
+
+     Row 2:
+       cited_paper_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       citing_paper_id: 2beb2197a8a03aea8d6e678b6cf8f4886f75315c
+       year_cited: 2004.0
+       in_dataset: False
+
+     Row 3:
+       cited_paper_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       citing_paper_id: 66e4b494ca39f17248b80eddd361d34411cb62ca
+       year_cited: 1999.0
+       in_dataset: False
+
+     Row 4:
+       cited_paper_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       citing_paper_id: 1e3f72a19e32f6e28b6ed2c438cfea296e9ffebb
+       year_cited: 2024.0
+       in_dataset: False
+
+     Row 5:
+       cited_paper_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       citing_paper_id: f855b00c5ab4d00f2b34a7648c58496ab4e89c7b
+       year_cited: 2023.0
+       in_dataset: False
+
+   Unique Values Sample:
+     cited_paper_id: ['c71d51183cad2a9c488760df1252079ebfcbed91', '931514d517731f9d925511e60f0594e5b61cd47b']
+     citing_paper_id: ['64e6d97bb6ea8d92a38eff985c7298c5b720759f', '2beb2197a8a03aea8d6e678b6cf8f4886f75315c', '66e4b494ca39f17248b80eddd361d34411cb62ca', '1e3f72a19e32f6e28b6ed2c438cfea296e9ffebb', 'f855b00c5ab4d00f2b34a7648c58496ab4e89c7b']
+
+--------------------------------------------------
+
+6. FILE: dblp_missing_papers.csv
+   Size: 1.54 MB
+   Total Rows: 11,590
+   Columns (7):
+      1. dblp_id
+      2. title
+      3. author_count
+      4. s2_id
+      5. corpus_id
+      6. acl_id
+      7. DOI
+
+   Sample Data (first 5 rows):
+     Row 1:
+       dblp_id: conf/acl/MendoncaJSC02
+       title: Analyzing the Semantics of patient data to rank records of literature retrieval.
+       author_count: 4
+       s2_id: nan
+       corpus_id: nan
+       acl_id: nan
+       DOI: 10.3115/1118149.1118159
+
+     Row 2:
+       dblp_id: conf/acl/JavedNGJBMSAFPR24
+       title: IndicVoices: Towards building an Inclusive Multilingual Speech Dataset for Indian Languages.
+       author_count: 21
+       s2_id: nan
+       corpus_id: nan
+       acl_id: nan
+       DOI: 10.18653/v1/2024.findings-acl.639
+
+     Row 3:
+       dblp_id: conf/acl/CuiLZZSYL23
+       title: PV2TEA: Patching Visual Modality to Textual-Established Information Extraction.
+       author_count: 7
+       s2_id: nan
+       corpus_id: nan
+       acl_id: nan
+       DOI: 10.18653/v1/2023.findings-acl.127
+
+     Row 4:
+       dblp_id: conf/acl/WagnerABA25
+       title: Mind Your Theory: Theory of Mind Goes Deeper Than Reasoning.
+       author_count: 4
+       s2_id: nan
+       corpus_id: nan
+       acl_id: 2025.findings-acl.1368
+       DOI: nan
+
+     Row 5:
+       dblp_id: conf/acl/LiWHC0C25
+       title: DRS: Deep Question Reformulation With Structured Output.
+       author_count: 6
+       s2_id: nan
+       corpus_id: nan
+       acl_id: 2025.findings-acl.666
+       DOI: nan
+
+   Unique Values Sample:
+     dblp_id: ['conf/acl/MendoncaJSC02', 'conf/acl/JavedNGJBMSAFPR24', 'conf/acl/CuiLZZSYL23', 'conf/acl/WagnerABA25', 'conf/acl/LiWHC0C25']
+     title: ['Analyzing the Semantics of patient data to rank records of literature retrieval.', 'IndicVoices: Towards building an Inclusive Multilingual Speech Dataset for Indian Languages.', 'PV2TEA: Patching Visual Modality to Textual-Established Information Extraction.', 'Mind Your Theory: Theory of Mind Goes Deeper Than Reasoning.', 'DRS: Deep Question Reformulation With Structured Output.']
+     acl_id: ['2025.findings-acl.1368', '2025.findings-acl.666']
+     DOI: ['10.3115/1118149.1118159', '10.18653/v1/2024.findings-acl.639', '10.18653/v1/2023.findings-acl.127']
+
+--------------------------------------------------
+
+7. FILE: dblp_papers_master.csv
+   Size: 8.7 MB
+   Total Rows: 37,418
+   Columns (7):
+      1. key
+      2. title
+      3. authors
+      4. year
+      5. pages
+      6. ee
+      7. venue
+
+   Sample Data (first 5 rows):
+     Row 1:
+       key: conf/acl/Belz98
+       title: Discovering Phonotactic Finite-State Automata by Generic Search.
+       authors: ['Anja Belz']
+       year: 1998
+       pages: 1472-1474
+       ee: https://aclanthology.org/P98-2240/
+       venue: COLING-ACL
+
+     Row 2:
+       key: conf/acl/ZhengMZLH20
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       authors: ['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang 0001']
+       year: 2020
+       pages: 437-442
+       ee: https://doi.org/10.18653/v1/2020.acl-main.42
+       venue: ACL
+
+     Row 3:
+       key: conf/acl/WuMS10
+       title: Fine-Grained Genre Classification Using Structural Learning Algorithms.
+       authors: ['Zhili Wu', 'Katja Markert', 'Serge Sharoff']
+       year: 2010
+       pages: 749-759
+       ee: https://aclanthology.org/P10-1077/
+       venue: ACL
+
+     Row 4:
+       key: conf/acl/MendoncaJSC02
+       title: Analyzing the Semantics of patient data to rank records of literature retrieval.
+       authors: ['Eneida A. Mendon', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']
+       year: 2002
+       pages: 69-76
+       ee: https://doi.org/10.3115/1118149.1118159
+       venue: ACL Workshop on Natural Language Processing in the Biomedical Domain
+
+     Row 5:
+       key: conf/acl/Park06
+       title: Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.
+       authors: ['Jihyun Park']
+       year: 2006
+       pages: nan
+       ee: https://aclanthology.org/P06-3005/
+       venue: ACL
+
+   Unique Values Sample:
+     key: ['conf/acl/Belz98', 'conf/acl/ZhengMZLH20', 'conf/acl/WuMS10', 'conf/acl/MendoncaJSC02', 'conf/acl/Park06']
+     title: ['Discovering Phonotactic Finite-State Automata by Generic Search.', 'Opportunistic Decoding with Timely Correction for Simultaneous Translation.', 'Fine-Grained Genre Classification Using Structural Learning Algorithms.', 'Analyzing the Semantics of patient data to rank records of literature retrieval.', 'Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.']
+     authors: ["['Anja Belz']", "['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang 0001']", "['Zhili Wu', 'Katja Markert', 'Serge Sharoff']", "['Eneida A. Mendon', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']", "['Jihyun Park']"]
+     pages: ['1472-1474', '437-442', '749-759', '69-76']
+     ee: ['https://aclanthology.org/P98-2240/', 'https://doi.org/10.18653/v1/2020.acl-main.42', 'https://aclanthology.org/P10-1077/', 'https://doi.org/10.3115/1118149.1118159', 'https://aclanthology.org/P06-3005/']
+     venue: ['COLING-ACL', 'ACL', 'ACL Workshop on Natural Language Processing in the Biomedical Domain']
+
+--------------------------------------------------
+
+8. FILE: dblp_paper_authors.csv
+   Size: 12.56 MB
+   Total Rows: 37,277
+   Columns (6):
+      1. s2_id
+      2. title
+      3. dblp_authors
+      4. dblp_id
+      5. s2_authors
+      6. s2_author_ids
+
+   Sample Data (first 5 rows):
+     Row 1:
+       s2_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       title: Discovering Phonotactic Finite-State Automata by Generic Search.
+       dblp_authors: ['Anja Belz']
+       dblp_id: conf/acl/Belz98
+       s2_authors: ['A. Belz']
+       s2_author_ids: ['1792458']
+
+     Row 2:
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       dblp_authors: ['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang 0001']
+       dblp_id: conf/acl/ZhengMZLH20
+       s2_authors: ['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang']
+       s2_author_ids: ['40223399', '1847848', '20712300', '66057453', '48545084']
+
+     Row 3:
+       s2_id: c5459ec0c889bc4a24a722b078b9945bc801b3e7
+       title: Fine-Grained Genre Classification Using Structural Learning Algorithms.
+       dblp_authors: ['Zhili Wu', 'Katja Markert', 'Serge Sharoff']
+       dblp_id: conf/acl/WuMS10
+       s2_authors: ['Zhi-Li Wu', 'K. Markert', 'S. Sharoff']
+       s2_author_ids: ['2146253785', '1686341', '2506104']
+
+     Row 4:
+       s2_id: 157e646ce1e3bc9873db9d1c50a117100c1e7e47
+       title: Analyzing the Semantics of patient data to rank records of literature retrieval.
+       dblp_authors: ['Eneida A. Mendon', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']
+       dblp_id: conf/acl/MendoncaJSC02
+       s2_authors: ['Eneida A. Mendonça', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']
+       s2_author_ids: ['2231793879', '1842859', '2245481427']
+
+     Row 5:
+       s2_id: bfd6eabd4d1f2012011225a6e6809ea320f17834
+       title: Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.
+       dblp_authors: ['Jihyun Park']
+       dblp_id: conf/acl/Park06
+       s2_authors: ['Jihyun Park']
+       s2_author_ids: ['1410122513']
+
+   Unique Values Sample:
+     s2_id: ['c71d51183cad2a9c488760df1252079ebfcbed91', '931514d517731f9d925511e60f0594e5b61cd47b', 'c5459ec0c889bc4a24a722b078b9945bc801b3e7', '157e646ce1e3bc9873db9d1c50a117100c1e7e47', 'bfd6eabd4d1f2012011225a6e6809ea320f17834']
+     title: ['Discovering Phonotactic Finite-State Automata by Generic Search.', 'Opportunistic Decoding with Timely Correction for Simultaneous Translation.', 'Fine-Grained Genre Classification Using Structural Learning Algorithms.', 'Analyzing the Semantics of patient data to rank records of literature retrieval.', 'Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.']
+     dblp_authors: ["['Anja Belz']", "['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang 0001']", "['Zhili Wu', 'Katja Markert', 'Serge Sharoff']", "['Eneida A. Mendon', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']", "['Jihyun Park']"]
+     dblp_id: ['conf/acl/Belz98', 'conf/acl/ZhengMZLH20', 'conf/acl/WuMS10', 'conf/acl/MendoncaJSC02', 'conf/acl/Park06']
+     s2_authors: ["['A. Belz']", "['Renjie Zheng', 'Mingbo Ma', 'Baigong Zheng', 'Kaibo Liu', 'Liang Huang']", "['Zhi-Li Wu', 'K. Markert', 'S. Sharoff']", "['Eneida A. Mendonça', 'Stephen B. Johnson', 'Yoon-Ho Seol', 'James J. Cimino']", "['Jihyun Park']"]
+     s2_author_ids: ["['1792458']", "['40223399', '1847848', '20712300', '66057453', '48545084']", "['2146253785', '1686341', '2506104']", "['2231793879', '1842859', '2245481427']", "['1410122513']"]
+
+--------------------------------------------------
+
+9. FILE: dblp_paper_ids.csv
+   Size: 6.65 MB
+   Total Rows: 37,418
+   Columns (7):
+      1. dblp_id
+      2. title
+      3. author_count
+      4. s2_id
+      5. corpus_id
+      6. acl_id
+      7. DOI
+
+   Sample Data (first 5 rows):
+     Row 1:
+       dblp_id: conf/acl/Belz98
+       title: Discovering Phonotactic Finite-State Automata by Generic Search.
+       author_count: 1
+       s2_id: c71d51183cad2a9c488760df1252079ebfcbed91
+       corpus_id: 3162639.0
+       acl_id: P98-2240
+       DOI: 10.3115/980691.980810
+
+     Row 2:
+       dblp_id: conf/acl/ZhengMZLH20
+       title: Opportunistic Decoding with Timely Correction for Simultaneous Translation.
+       author_count: 5
+       s2_id: 931514d517731f9d925511e60f0594e5b61cd47b
+       corpus_id: 218487602.0
+       acl_id: 2020.acl-main.42
+       DOI: 10.18653/v1/2020.acl-main.42
+
+     Row 3:
+       dblp_id: conf/acl/WuMS10
+       title: Fine-Grained Genre Classification Using Structural Learning Algorithms.
+       author_count: 3
+       s2_id: c5459ec0c889bc4a24a722b078b9945bc801b3e7
+       corpus_id: 6337659.0
+       acl_id: P10-1077
+       DOI: nan
+
+     Row 4:
+       dblp_id: conf/acl/MendoncaJSC02
+       title: Analyzing the Semantics of patient data to rank records of literature retrieval.
+       author_count: 4
+       s2_id: 157e646ce1e3bc9873db9d1c50a117100c1e7e47
+       corpus_id: 1131746.0
+       acl_id: W02-0310
+       DOI: 10.3115/1118149.1118159
+
+     Row 5:
+       dblp_id: conf/acl/Park06
+       title: Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.
+       author_count: 1
+       s2_id: bfd6eabd4d1f2012011225a6e6809ea320f17834
+       corpus_id: 1370069.0
+       acl_id: P06-3005
+       DOI: 10.3115/1557856.1557862
+
+   Unique Values Sample:
+     dblp_id: ['conf/acl/Belz98', 'conf/acl/ZhengMZLH20', 'conf/acl/WuMS10', 'conf/acl/MendoncaJSC02', 'conf/acl/Park06']
+     title: ['Discovering Phonotactic Finite-State Automata by Generic Search.', 'Opportunistic Decoding with Timely Correction for Simultaneous Translation.', 'Fine-Grained Genre Classification Using Structural Learning Algorithms.', 'Analyzing the Semantics of patient data to rank records of literature retrieval.', 'Modeling Human Sentence Processing Data with a Statistical Parts-of-Speech Tagger.']
+     s2_id: ['c71d51183cad2a9c488760df1252079ebfcbed91', '931514d517731f9d925511e60f0594e5b61cd47b', 'c5459ec0c889bc4a24a722b078b9945bc801b3e7', '157e646ce1e3bc9873db9d1c50a117100c1e7e47', 'bfd6eabd4d1f2012011225a6e6809ea320f17834']
+     acl_id: ['P98-2240', '2020.acl-main.42', 'P10-1077', 'W02-0310', 'P06-3005']
+     DOI: ['10.3115/980691.980810', '10.18653/v1/2020.acl-main.42', '10.3115/1118149.1118159', '10.3115/1557856.1557862']
+
+--------------------------------------------------
+

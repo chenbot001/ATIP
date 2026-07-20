@@ -1,0 +1,35 @@
+Graham Neubig | 1700325
+Lei Li | 49192881
+Maarten Sap | 2729164
+Louis-Philippe Morency | 49933077
+Yiming Yang | 35729970
+Mona T. Diab | 2138579860
+Carolyn P. Rosé | 2316472471
+Emma Strubell | 2268272
+Daniel Fried | 47070750
+Chenyan Xiong | 144628574
+Tom M. Mitchell | 144135485
+Yonatan Bisk | 3312309
+Sean Welleck | 2129663
+Eric Nyberg | 144287919
+Daphne Ippolito | 7975935
+Jamie Callan | 144987107
+Bhiksha Raj | 2240348802
+Norman M. Sadeh | 2464164
+Kathleen M. Carley | 152493572
+Justine Cassell | 145431806
+Fernando Diaz | 2307017786
+Chris Donahue | 2266395429
+Aditi Raghunathan | 2344831148
+J Kolter | 145116464
+Pradeep Ravikumar | 145969795
+Christos Faloutsos | 1702392
+Fei Fang | 2310827411
+Andrej Risteski | 3181040
+Anupam Datta | 33374965
+Matt Fredrikson | 2623167
+Virginia Smith | 2308098896
+Bogdan Vasilescu | 2434621
+David P. Woodruff | 2308097931
+Zhihao Jia | 2271058444
+Kemal Oflazer | 1723120

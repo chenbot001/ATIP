@@ -1,0 +1,67 @@
+# Python related
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment directories
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Office temporary files
+~$*
+*.tmp
+
+# Logs
+*.log
+
+# Data table files (prepared separately, not tracked in git)
+*.csv
+*.xlsx
+*.joblib
+*.safetensors
+dblp.xml
+anthology+abstracts.bib
+
+# Backup files
+*.bak
+*.backup

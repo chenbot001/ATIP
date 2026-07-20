@@ -1,0 +1,157 @@
+CSV FILES STRUCTURE ANALYSIS
+==================================================
+
+1. FILE: acl_dblp_paper_mapping.csv
+   Size: 4.27 MB
+   Total Rows: 34,024
+   Columns (5):
+      1. acl_paper_id (string)
+      2. dblp_key (string)
+      3. title (string)
+      4. year (int)
+      5. venue (string)
+
+--------------------------------------------------
+
+2. FILE: acl_papers_master.csv
+   Size: 99.53 MB
+   Total Rows: 38,805
+   Columns (38):
+      1. paper_id (string)
+      2. tuple_id (string)
+      3. doi (empty)
+      4. parent (string)
+      5. bibkey (string)
+      6. title (string)
+      7. attachments (string)
+      8. authors (string)
+      9. author_ids (string)
+     10. author_affils (string)
+     11. author_variants (string)
+     12. awards (string)
+     13. editors (string)
+     14. errata (string)
+     15. revisions (string)
+     16. videos (string)
+     17. abstract (empty)
+     18. deletion (empty)
+     19. ingest_date (empty)
+     20. issue (empty)
+     21. journal (empty)
+     22. language (empty)
+     23. note (empty)
+     24. pages (empty)
+     25. paperswithcode (empty)
+     26. pdf (string)
+     27. venue (string)
+     28. url (url)
+     29. year (int)
+     30. address (string)
+     31. bibtype (string)
+     32. citeproc_dict (string)
+     33. csltype (string)
+     34. is_deleted (bool)
+     35. is_frontmatter (bool)
+     36. language_name (empty)
+     37. month (string)
+     38. publisher (string)
+
+--------------------------------------------------
+
+3. FILE: authorships.csv
+   Size: 25.0 MB
+   Total Rows: 161,180
+   Columns (7):
+      1. s2_id (string)
+      2. title (string)
+      3. dblp_name (string)
+      4. s2_name (string)
+      5. s2_author_id (bigint)
+      6. authorship_order (int)
+      7. match_confidence (string)
+
+--------------------------------------------------
+
+4. FILE: author_profiles.csv
+   Size: 2.58 MB
+   Total Rows: 48,567
+   Columns (10):
+      1. dblp_name (string)
+      2. s2_author_id (bigint)
+      3. s2_author_name (string)
+      4. paper_count (int)
+      5. first_author_count (int)
+      6. last_author_count (int)
+      7. affiliation (empty)
+      8. career_length (empty)
+      9. h_index (float)
+     10. citations (float)
+
+--------------------------------------------------
+
+5. FILE: citation_details.csv
+   Size: 188.4 MB
+   Total Rows: 2,062,979
+   Columns (4):
+      1. cited_paper_id (string)
+      2. citing_paper_id (string)
+      3. year_cited (float)
+      4. in_dataset (bool)
+
+--------------------------------------------------
+
+6. FILE: dblp_missing_papers.csv
+   Size: 1.54 MB
+   Total Rows: 11,590
+   Columns (7):
+      1. dblp_id (string)
+      2. title (string)
+      3. author_count (int)
+      4. s2_id (empty)
+      5. corpus_id (empty)
+      6. acl_id (empty)
+      7. DOI (string)
+
+--------------------------------------------------
+
+7. FILE: dblp_papers_master.csv
+   Size: 8.7 MB
+   Total Rows: 37,418
+   Columns (7):
+      1. key (string)
+      2. title (string)
+      3. authors (string)
+      4. year (int)
+      5. pages (string)
+      6. ee (url)
+      7. venue (string)
+
+--------------------------------------------------
+
+8. FILE: dblp_paper_authors.csv
+   Size: 12.56 MB
+   Total Rows: 37,277
+   Columns (6):
+      1. s2_id (string)
+      2. title (string)
+      3. dblp_authors (string)
+      4. dblp_id (string)
+      5. s2_authors (string)
+      6. s2_author_ids (string)
+
+--------------------------------------------------
+
+9. FILE: dblp_paper_ids.csv
+   Size: 6.65 MB
+   Total Rows: 37,418
+   Columns (7):
+      1. dblp_id (string)
+      2. title (string)
+      3. author_count (int)
+      4. s2_id (string)
+      5. corpus_id (float)
+      6. acl_id (string)
+      7. DOI (string)
+
+--------------------------------------------------
+
